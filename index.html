@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Snake Game</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonte personalizada para dar um visual mais moderno -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Container principal para centralizar o conteúdo -->
+    <div class="game-container">
+      <!-- Título do jogo -->
+      <h1>Snake Game</h1>
+      <!-- Canvas onde o jogo será desenhado -->
+      <canvas id="game-canvas" width="400" height="400"></canvas>
+      <!-- Exibição da pontuação -->
+      <div class="score">Pontuação: <span id="score">0</span></div>
+      <!-- Botão para reiniciar o jogo -->
+      <button id="restart-button">Reiniciar</button>
+    </div>
+
+    <!-- Controles direcionais para dispositivos móveis -->
+    <div class="controls">
+      <div class="directional-pad">
+        <button id="up" class="control-btn">↑</button>
+        <div class="horizontal-controls">
+          <button id="left" class="control-btn">←</button>
+          <button id="down" class="control-btn">↓</button>
+          <button id="right" class="control-btn">→</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
